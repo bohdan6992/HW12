@@ -1,0 +1,12 @@
+@media(max-width: 970px){
+  .header__about{
+    display: block;
+  }
+  .header__about-inner{
+    text-align: center;
+  }
+  .header__btns{
+    display: block;
+    text-align: center;
+  }
+}

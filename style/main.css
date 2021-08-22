@@ -1,4 +1,5 @@
 @import url(./font.css);
+@import url(./media.css);
 
 *{
   box-sizing: border-box;
@@ -7,6 +8,12 @@
    text-decoration: none;
    display: inline-block;
  }
+ ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
  /* ___________________________________MENU_______________________________________________ */
  .menu{
   margin: 0 auto;
@@ -444,4 +451,68 @@ button:hover{
 }
 .btn4{
   padding: 19px 23px 20px;
+}
+
+/* __________________________________FOOTER________________________________________________ */
+
+.footer{
+  margin: o auto;
+}
+.footer__main-inner{
+  background-color:#373A3C;
+}
+.footer__main-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 58px 0 20px;
+}
+
+.footer__links-title{
+  margin-bottom: 34px;
+  font-family: "HelveticaNeue";
+  font-size: 18px;
+  line-height: 21px;
+  color: #7DD42F;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.footer__links ul a{
+  font-family: "HelveticaNeue";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 29px;
+}
+
+.footer__social img{
+  height: 19px;
+  width: 19px;
+}
+.footer__social img + img{
+  margin-left: 10px;
+}
+
+.footer__company-inner{
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.85px;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 38px;
+  background-color: #373A3C;
+}
+.footer__company-mainbox{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
 }
