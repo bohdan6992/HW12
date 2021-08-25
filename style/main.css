@@ -516,3 +516,95 @@ button:hover{
   display: flex;
   justify-content: space-between;
 }
+
+/* ____________________*****FRAGMENTS FOR ADAPTIVE*****_________________________ */
+
+/* _____________________________hamburger-menu__________________________________ */
+
+.hamburger-menu{
+  display: block;
+  visibility: hidden;
+  position: relative;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  margin-top: 23px;
+  width: 100%;
+  display: block;
+  visibility: visible;
+  transform: translateX(0%);
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -31px;
+  right: 0px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #7DD42F;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  max-width: 926px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+  text-align: center;
+  z-index: 1;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-150%);
+  background-color:#373A3C;
+  opacity: 0.8;
+}
+.menu__list-search input {
+  padding: 0 10px;
+}
+.menu__box li + li{
+  margin-top: 10px;
+}
+.menu__list-item {
+  display: block;
+  padding: 12px 24px;
+  transition-duration: .25s;
+  margin-left: 0;
+}

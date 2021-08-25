@@ -10,3 +10,21 @@
     text-align: center;
   }
 }
+
+/* ____________________ADAPTIV MENU____________________________________ */
+
+@media (max-width: 1182px){
+  .hamburger-menu{
+    visibility: visible;
+  }
+  .menu__list{
+    display: none;
+  }
+  .menu__inner{
+    position: relative;
+    display: block;
+  }
+  .menu__logo{
+    padding-top: 22px;
+  }
+}
